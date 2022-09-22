@@ -1,0 +1,99 @@
+*::before,
+*::after,
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /* Layout sizes */
+    /* --mobile: 375px;
+    --desktop: 1440px; */
+
+    /* Fonts */
+    font-family: 'Manrope', sans-serif;
+
+    /* Colors */
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--dark-blue);
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* Main */
+.main-container {
+    max-width: 515px;
+    min-height: 300px;
+    position: relative;
+    background-color: var(--dark-grayish-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 12px;
+    padding: 1.75rem;
+    gap: 1rem;
+}
+
+.advice-title {
+    margin-bottom: 0;
+    font-size: .75rem;
+    font-weight: 600;
+    color: var(--neon-green);
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+}
+
+.random-quote {
+    font-size: 28px;
+    color: var(--light-cyan);
+}
+
+.divider-img--container {
+    margin-block: 1rem 2rem;
+}
+
+.icon-img--btn {
+    position: absolute;
+    bottom: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.125rem;
+    background-color: var(--neon-green);
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+/* Footer */
+.attribution {
+    position: fixed;
+    bottom: 0;
+    padding: .45rem;
+    color: var(--light-cyan);
+    font-size: .65rem; 
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
