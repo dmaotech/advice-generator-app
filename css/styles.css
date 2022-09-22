@@ -84,6 +84,11 @@ button {
     cursor: pointer;
 }
 
+.icon-img--btn:hover {
+    box-shadow: 0px 0px 25px 3px var(--neon-green);
+    transition: .15s;
+}
+
 /* Footer */
 .attribution {
     position: fixed;
